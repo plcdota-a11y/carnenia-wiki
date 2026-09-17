@@ -24,6 +24,12 @@ export default function WikiHomePage() {
               <li><Link href="/wiki/magia" className="hover:text-amber-400 transition-colors">Magia e o Manancial</Link></li>
               
             </ul>
+          </div>{/* Pode adicionar isso embaixo da seção Cosmologia & Magia */}
+          <div className="mt-8">
+            <h3 className="text-stone-500 uppercase text-xs font-bold mb-3 tracking-widest">Equipamentos</h3>
+            <ul className="space-y-3 pl-2 border-l border-stone-800">
+              <li><Link href="/wiki/arsenal" className="hover:text-amber-400 transition-colors">Arsenal e Artefatos</Link></li>
+            </ul>
           </div>
 
           <div>
