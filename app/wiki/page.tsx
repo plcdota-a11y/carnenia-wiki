@@ -21,6 +21,7 @@ export default function WikiHomePage() {
               <li><Link className="hover:text-amber-400 transition-colors" href="/wiki/calendario-duo-lunar">Calendário Duo-Lunar</Link></li>
               <li><Link href="/wiki/conceitos-magicos" className="hover:text-amber-400 transition-colors">Conceitos Mágicos</Link></li>
               <li><Link href="/wiki/genese-e-fim" className="hover:text-amber-400 transition-colors">Gênese e Fim (O Findar das Eras)</Link></li>
+              <li><Link href="/wiki/magia" className="hover:text-amber-400 transition-colors">Magia e o Manancial</Link></li>
               
             </ul>
           </div>
