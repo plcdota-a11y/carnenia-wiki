@@ -148,6 +148,36 @@ export default function PanteaoReligioesPage() {
                 )}
               </div>
 
+              {/* Descendentes de Ramaal (NOVO) */}
+              <div className="border border-yellow-900/50 rounded-xl overflow-hidden bg-stone-900/20">
+                <button 
+                  onClick={() => toggleReligiao('ramaal')}
+                  className="w-full text-left p-6 flex justify-between items-center hover:bg-stone-900/60 transition-colors"
+                >
+                  <div>
+                    <h3 className="text-2xl font-bold text-yellow-500 font-serif">Os Descendentes de Ramaal</h3>
+                    <p className="text-xs text-stone-500 uppercase tracking-widest mt-1">Deserto Al'hamra • Nzara'Khur</p>
+                  </div>
+                  <span className="text-3xl text-yellow-600 font-light">{religiaoAberta === 'ramaal' ? '−' : '+'}</span>
+                </button>
+                {religiaoAberta === 'ramaal' && (
+                  <div className="p-6 pt-0 text-stone-300 text-base border-t border-yellow-900/30 mt-2 space-y-4">
+                    <p className="mt-4">
+                      Um culto recluso originado nas profundezas do <strong>Deserto Al'hamra</strong>. Para o povo de Nzara, Ramaal foi um ser quase divino, um descendente direto de <TermoWiki href="astra-lumina">Astra Lumina</TermoWiki>.
+                    </p>
+                    <p>
+                      As lendas narram que ele nasceu em um dia silencioso e tranquilo, mas logo após o seu nascimento, os céus emitiram um sinal celestial. A partir daquele dia, tudo o que a criança tocava tornava-se sacro: águas turvas purificavam-se instantaneamente, remédios simples viravam poções milagrosas e as plantações estéreis do deserto floresciam como nunca antes visto.
+                    </p>
+                    <div className="bg-stone-950 p-5 rounded-lg border border-yellow-900/30 mt-4">
+                      <h4 className="font-bold text-yellow-400 mb-2">A Ascensão do Qaid</h4>
+                      <p className="text-sm text-stone-400">
+                        Estes milagres foram interpretados como o sinal divino definitivo, unificando as tribos esparsas e fundando o <strong>Império de Nzara'Khur</strong>, com Ramaal sendo aclamado como o primeiro Rei. É dessa vertente religiosa que deriva a lei de sucessão do deserto: não existe ritual de escolha para o governante. Acredita-se que o <em>Qaid</em> é escolhido por nascimento, pois a própria Família Real é considerada oriunda de Astra Lumina, sangue do sangue das divindades.
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               {/* Filhos das Luas Imortais */}
               <div className="border border-slate-700/50 rounded-xl overflow-hidden bg-stone-900/20">
                 <button 
@@ -240,7 +270,7 @@ export default function PanteaoReligioesPage() {
                 Apesar das imensas diferenças culturais e dogmáticas, <strong>todas as religiões listadas acima compartilham uma única profecia idêntica</strong> para o fim do mundo.
               </p>
               <p className="text-stone-400 relative z-10">
-                Os Filhos das Luas, a Igreja de Noxae Luxae, os Filhos de Hamaal, o Rito Sheiong e os praticantes do Xintoísmo preveem o mesmo evento: o firmamento se rasgará e de Astra Lumina descerá um coral celestial acompanhado por Morsith. Eles entoarão os <strong>Hinos do Findar das Eras</strong>, apagando os Poemas de Kalinor e dissolvendo toda a realidade de volta para o Mar Primordial.
+                Os Filhos das Luas, a Igreja de Noxae Luxae, os Filhos de Hamaal, os Descendentes de Ramaal, o Rito Sheiong e os praticantes do Xintoísmo preveem o mesmo evento: o firmamento se rasgará e de Astra Lumina descerá um coral celestial acompanhado por Morsith. Eles entoarão os <strong>Hinos do Findar das Eras</strong>, apagando os Poemas de Kalinor e dissolvendo toda a realidade de volta para o Mar Primordial.
               </p>
               <div className="mt-6 relative z-10">
                 <Link href="/wiki/genese-e-fim" className="text-indigo-400 hover:text-indigo-300 font-bold underline decoration-indigo-500/50 underline-offset-4 transition-colors">
